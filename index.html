@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LevelUp</title>
+
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font" />
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-700.woff2" as="font" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+    <link rel="stylesheet" type="text/css" href="css/fixed-container.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/promo.css" />
+    <link rel="stylesheet" type="text/css" href="css/components.css" />
+    <link rel="stylesheet" type="text/css" href="css/feedback.css" />
+    <link rel="stylesheet" type="text/css" href="css/promo-second.css" />
+    <link rel="stylesheet" type="text/css" href="css/order.css" />
+
+    <script src="js/slider.js" defer></script>
+    <script src="js/timer.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="promo">
+        <video
+          class="promo__video"
+          src="video/video-promo.mp4"
+          autoplay
+          muted
+          playsinline
+          loop
+        ></video>
+
+        <div class="container">
+          <h1 class="promo__title">“LevelUp”. Продукт для повышения потенции.</h1>
+
+          <div class="promo__content">
+            <img class="promo__img" src="img/prod.png" alt="Фото продукта" />
+
+            <ul class="list-style-reset promo__desc">
+              <li class="promo__desc-item">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li class="promo__desc-item">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </li>
+              <li class="promo__desc-item">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+              </li>
+            </ul>
+          </div>
+
+          <div class="button__container">
+            <a class="button-order" href="#order"> Заказать </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="components">
+        <div class="container">
+          <h2 class="components__title">Состав продукта</h2>
+
+          <div class="components__container">
+            <ul class="list-style-reset components__list">
+              <li class="components__list-item">
+                <img class="components__list-img" src="img/prod.png" alt="Ингредиент продукта" />
+                <p class="components__name">Ингредиент продукта</p>
+              </li>
+
+              <li class="components__list-item">
+                <img class="components__list-img" src="img/prod.png" alt="Ингредиент продукта" />
+                <p class="components__name">Ингредиент продукта</p>
+              </li>
+
+              <li class="components__list-item">
+                <img class="components__list-img" src="img/prod.png" alt="Ингредиент продукта" />
+                <p class="components__name">Ингредиент продукта</p>
+              </li>
+            </ul>
+
+            <div class="components__img-container">
+              <img class="components__img" src="img/doctor.png" alt="Фото продукта" />
+            </div>
+
+            <ul class="list-style-reset components__list">
+              <li class="components__list-item">
+                <img class="components__list-img" src="img/prod.png" alt="Ингредиент продукта" />
+                <p class="components__name">Ингредиент продукта</p>
+              </li>
+
+              <li class="components__list-item">
+                <img class="components__list-img" src="img/prod.png" alt="Ингредиент продукта" />
+                <p class="components__name">Ингредиент продукта</p>
+              </li>
+
+              <li class="components__list-item">
+                <img class="components__list-img" src="img/prod.png" alt="Ингредиент продукта" />
+                <p class="components__name">Ингредиент продукта</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="button__container">
+            <a class="button-order" href="#order"> Заказать </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <div class="container">
+          <h2 class="feedback__title">Отзывы покупателей</h2>
+
+          <div class="feedback__container">
+            <button
+              id="previous"
+              class="arrow-button slider__control_left js-slider__button_previous"
+              type="button"
+              aria-label="Переход к предыдущему слайду"
+            ></button>
+            <button
+              id="next"
+              class="arrow-button slider__control_right js-slider__button_next"
+              type="button"
+              aria-label="Переход к следующему слайду"
+            ></button>
+
+            <div class="slider js-slider" tabindex="0">
+              <ul class="slider__wrapper list-style-reset js-slider__list">
+                <li class="slider__item js-slider__item">
+                  <figure class="feedback__figure">
+                    <picture>
+                      <img
+                        src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=455x360+JPG+1x"
+                        srcset="
+                          https://via.placeholder.com/740x580.jpg/00FF00/000000?text=910x720+JPG+2x 2x
+                        "
+                        alt="Отзыв"
+                      />
+                    </picture>
+
+                    <figcaption class="feedback__figcaption">
+                      <span class="feedback__name">Фамилия Имя1</span>
+                      <span class="feedback__description"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</span
+                      >
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li class="slider__item js-slider__item">
+                  <figure class="feedback__figure">
+                    <picture>
+                      <img
+                        src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=455x360+JPG+1x"
+                        srcset="
+                          https://via.placeholder.com/740x580.jpg/00FF00/000000?text=910x720+JPG+2x 2x
+                        "
+                        alt="Отзыв"
+                      />
+                    </picture>
+
+                    <figcaption class="feedback__figcaption">
+                      <span class="feedback__name">Фамилия Имя</span>
+                      <span class="feedback__description"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</span
+                      >
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li class="slider__item js-slider__item">
+                  <figure class="feedback__figure">
+                    <picture>
+                      <img
+                        src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=455x360+JPG+1x"
+                        srcset="
+                          https://via.placeholder.com/740x580.jpg/00FF00/000000?text=910x720+JPG+2x 2x
+                        "
+                        alt="Отзыв"
+                      />
+                    </picture>
+
+                    <figcaption class="feedback__figcaption">
+                      <span class="feedback__name">Фамилия Имя</span>
+                      <span class="feedback__description"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</span
+                      >
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li class="slider__item js-slider__item">
+                  <figure class="feedback__figure">
+                    <picture>
+                      <img
+                        src="https://via.placeholder.com/370x290.jpg/00FF00/000000?text=455x360+JPG+1x"
+                        srcset="
+                          https://via.placeholder.com/740x580.jpg/00FF00/000000?text=910x720+JPG+2x 2x
+                        "
+                        alt="Отзыв"
+                      />
+                    </picture>
+
+                    <figcaption class="feedback__figcaption">
+                      <span class="feedback__name">Фамилия Имя</span>
+                      <span class="feedback__description"
+                        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</span
+                      >
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promo-second">
+        <div class="container">
+          <h2 class="promo-second__title">Описание продукта</h2>
+
+          <div class="promo-second__container">
+            <img class="promo-second__img" src="img/doctor.png" alt="Фото врача" />
+            <p class="promo-second__info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum
+            </p>
+          </div>
+
+          <ul class="list-style-reset promo-second__list">
+            <li class="promo-second__list-item">Xарактеристики</li>
+            <li class="promo-second__list-item">Xарактеристики</li>
+            <li class="promo-second__list-item">Xарактеристики</li>
+          </ul>
+
+          <div class="button__container">
+            <a class="button-order" href="#order"> Заказать </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="order" id="order">
+        <div class="container">
+          <h2 class="order__title">LevelUp</h2>
+
+          <p class="order__timer" id="timer"></p>
+
+          <div class="order__container">
+            <div class="order__product">
+              <img class="order__product-img" src="img/prod.png" alt="Фото продукта" />
+              <p class="order__product-price">Старая цена: <s>2000</s> р</p>
+              <p class="order__product-price">
+                Новая цена: <span class="order__product-price-animate">1000 р</span>
+              </p>
+            </div>
+
+            <form class="form">
+              <label class="form__field">
+                Имя
+                <input
+                  name="name"
+                  class="form__input"
+                  id="name-input"
+                  type="text"
+                  placeholder="Имя"
+                  required
+                />
+                <span class="form__input-example">Пример имя</span>
+              </label>
+
+              <label class="form__field">
+                Телефон
+                <input
+                  name="about"
+                  class="form__input"
+                  id="about-input"
+                  type="text"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                  placeholder="88008008080"
+                  required
+                />
+                <span class="form__input-example">880012312312</span>
+              </label>
+
+              <button type="submit" class="form__button">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
